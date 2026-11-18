@@ -4,7 +4,10 @@ Ngày kiểm tra: 18/11/2026 (giờ Việt Nam).
 
 ## Kết quả kiểm tra tự động
 
-`npm test` trên Node.js 24.15.0: **65/65 kiểm thử đạt**, không có lỗi hoặc kiểm thử bị bỏ qua.
+Trên Node.js 24.15.0, **95/95 kiểm thử đạt** khi chạy `npm test`.
+
+- Đối chiếu cả 175 chữ trong phần viết và từ vựng với tệp nét được đóng gói. Kiểm tra thứ tự nét, thử lại sau lỗi tải, ghi tiến độ, tương thích bản sao lưu cũ và hủy thao tác khi đổi bài.
+- Kiểm tra hoàn tác, lưu ảnh, vẽ bằng một con trỏ và giữ nét khi đổi kích thước của ô viết tự do.
 
 - Dữ liệu đủ 15 bài đồng hành với sách, 119 mục từ vựng, 78 điểm ngữ pháp, thứ tự bài, trang sách/PDF, trường chữ Hán/Pinyin/tiếng Việt, đáp án và liên kết nguồn.
 - Liên kết ngữ pháp đúng bài, cú pháp JavaScript và đường dẫn tài nguyên tương đối để chạy dưới tiền tố repository GitHub Pages.
@@ -17,9 +20,11 @@ Ngày kiểm tra: 18/11/2026 (giờ Việt Nam).
 
 ## Kiểm tra giao diện và giới hạn xác minh
 
-Đã quan sát giao diện localhost ở trang chính và bài học cùng khu vực trạng thái âm thanh. Chưa xác minh đầy đủ trên điện thoại hoặc nhiều kích thước màn hình; các lần thử thay viewport không tạo đủ bằng chứng để khẳng định kiểm tra responsive đã hoàn tất.
+Trong phần luyện viết, đã dùng chuột viết chữ 人 của bài 2 trên trình duyệt. Nét ngang sai bị yêu cầu thử lại. Viết đủ hai nét theo mẫu cho kết quả 2/2 nét, 1 lần thử lại và 0 gợi ý. Tiến độ 1/3 chữ của bài được giữ sau khi tải lại. Đã kiểm tra nút xem riêng từng nét và đối chiếu cách trình bày ở màn hình rộng và hẹp.
 
-Lần tiếp tục kiểm tra qua native Chrome đã dừng vì công cụ không xác định được URL của tab. Không thực hiện thêm thao tác trên tab chưa xác định và không dùng một công cụ điều khiển trình duyệt khác để bỏ qua giới hạn này.
+Trong lần cập nhật luyện viết này, đã đối chiếu bàn viết ở desktop rộng 1265 pixel và màn hình hẹp 375 CSS pixel. Ở màn hình hẹp, chiều rộng tài liệu khớp chiều rộng cuộn và bốn nút chế độ đều còn hiển thị. Đây là kiểm tra các kích thước nêu trên, chưa phải kiểm thử trên mọi thiết bị thực tế.
+
+Ở lần xuất bản ban đầu, đã quan sát trang chính/bài học/trạng thái âm thanh trên localhost. Lần kiểm tra qua native Chrome khi đó dừng vì công cụ không xác định được URL; giới hạn cũ này không được dùng làm bằng chứng cho kiểm tra giao diện luyện viết mới.
 
 Chưa xác minh bằng việc nghe trực tiếp toàn bộ audio, thu micro thật hoặc sinh câu với model WebGPU thật. Khả năng hoạt động và chất lượng giọng phụ thuộc thiết bị/trình duyệt. Chưa kết nối tài khoản Cloudflare/OpenAI thật cho backend tùy chọn. Nội dung tĩnh đã được đối chiếu tài liệu có dẫn nguồn, chưa có giáo viên thẩm định độc lập; nội dung AI động cần người học đối chiếu lại.
 

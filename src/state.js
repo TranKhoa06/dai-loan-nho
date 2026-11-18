@@ -1,10 +1,20 @@
+import { lessons } from './curriculum.js';
+
+const writingLessons = new Set(lessons.map(lesson => lesson.id));
 const KEY = 'dailoan-nho:v1';
 const day = () => new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Ho_Chi_Minh', year: 'numeric', month: '2-digit', day: '2-digit' }).format(new Date());
-const empty = () => ({ version: 1, name: 'bạn', completed: {}, reviews: {}, activities: {}, lastLesson: '', settings: { pinyin: true, zhuyin: false, rate: 0.85, endpoint: '' } });
+const empty = () => ({ version: 1, name: 'bạn', completed: {}, writing: {}, reviews: {}, activities: {}, lastLesson: '', settings: { pinyin: true, zhuyin: false, rate: 0.85, endpoint: '' } });
 export function validateState(input) {
   if (!input || input.version !== 1 || typeof input !== 'object') throw new Error('Tệp tiến độ không đúng định dạng.');
   const s = empty();
   s.name = typeof input.name === 'string' ? input.name.slice(0, 32) : 'bạn';
+  if (input.writing && typeof input.writing === 'object' && !Array.isArray(input.writing)) {
+    for (const [key, chars] of Object.entries(input.writing).slice(0, 150)) {
+      if (writingLessons.has(key) && Array.isArray(chars)) {
+        s.writing[key] = [...new Set(chars.slice(0, 500).filter(c => typeof c === 'string' && /^\p{Script=Han}$/u.test(c)))];
+      }
+    }
+  }
   if (input.completed && typeof input.completed === 'object') for (const [key, value] of Object.entries(input.completed).slice(0, 150)) {
     if (/^[\w-]{1,50}$/.test(key) && !['__proto__','constructor','prototype'].includes(key) && value && typeof value === 'object' && !Array.isArray(value)) s.completed[key] = Object.fromEntries(Object.entries(value).filter(([k,v]) => ['vocabulary','listening','speaking','reading','writing','quiz'].includes(k) && v === true));
   }

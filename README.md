@@ -8,6 +8,8 @@ Web học 國語 bằng tiếng Việt, dùng chữ phồn thể, Pinyin và Ch�
 
 Ứng dụng bổ trợ **當代中文課程 1 · A Course in Contemporary Chinese 1**, theo 15 chủ đề bài của quyển 1. Web không phân phối lại PDF sách. Nội dung giải thích, ví dụ và bài luyện được biên soạn riêng; danh sách nguồn đối chiếu có trong ứng dụng và [CONTENT_SOURCES.md](docs/CONTENT_SOURCES.md). Phạm vi là các kỹ năng của quyển 1; đây không phải toàn bộ giáo trình tới trình độ thành thạo hoặc chứng nhận TOCFL.
 
+Ở phần **Luyện viết**, chọn bài và chữ để xem mẫu động, xem từng nét, viết theo chữ mờ hoặc thử lại từ trí nhớ. Web lưu các chữ đã viết đủ nét trên thiết bị. Chế độ viết tự do có hoàn tác và xuất ảnh PNG. Mẫu viết bao phủ 175 chữ trong phần viết và từ vựng của 15 bài. [Mở bàn luyện viết](https://trankhoa06.github.io/dai-loan-nho/#writing) · [Nguồn dữ liệu nét](docs/WRITING_SOURCES.md)
+
 ## Chạy trên máy
 
 Cần Node.js 22 trở lên; không cần cài thư viện npm.

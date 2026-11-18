@@ -1,0 +1,6 @@
+# Keep vendored ESM byte hashes stable on Windows and GitHub Pages.
+assets/vendor/hanzi-writer.esm.js text eol=lf
+
+# Preserve upstream license/document bytes, including original trailing spaces.
+assets/hanzi-data/ARPHICPL.TXT -text -whitespace
+assets/hanzi-data/README.upstream.md -text -whitespace
