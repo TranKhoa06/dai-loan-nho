@@ -2,7 +2,7 @@
 
 [Mã nguồn GitHub](https://github.com/TranKhoa06/dai-loan-nho) · [Địa chỉ GitHub Pages](https://trankhoa06.github.io/dai-loan-nho/) · [Trạng thái triển khai](https://github.com/TranKhoa06/dai-loan-nho/actions/workflows/deploy.yml)
 
-Pages đã được cấu hình; website xuất hiện sau khi workflow triển khai đầu tiên hoàn tất thành công.
+Website đã được triển khai thành công trên GitHub Pages. Xem [báo cáo kiểm tra](docs/QA_REPORT.md) để biết phạm vi xác minh và các giới hạn của thiết bị.
 
 Web học 國語 bằng tiếng Việt, dùng chữ phồn thể, Pinyin và Chú âm. Giao diện chia kỹ năng nghe, nói, đọc, viết, ngữ pháp và trò chơi ôn tập. Học liệu và tiến độ lưu trên thiết bị; phần học cốt lõi không cần tài khoản hay khóa API.
 

@@ -25,6 +25,10 @@ Chưa xác minh bằng việc nghe trực tiếp toàn bộ audio, thu micro th�
 
 ## Build và triển khai
 
-Repository: [TranKhoa06/dai-loan-nho](https://github.com/TranKhoa06/dai-loan-nho). GitHub Pages đã được cấu hình dùng workflow và HTTPS. Theo dõi [lượt triển khai](https://github.com/TranKhoa06/dai-loan-nho/actions/workflows/deploy.yml); trạng thái xuất bản sẽ được ghi lại sau khi workflow đầu tiên hoàn tất.
+Website: [trankhoa06.github.io/dai-loan-nho](https://trankhoa06.github.io/dai-loan-nho/). Repository: [TranKhoa06/dai-loan-nho](https://github.com/TranKhoa06/dai-loan-nho).
+
+Lượt xuất bản chức năng đầu tiên [44270494302](https://github.com/TranKhoa06/dai-loan-nho/actions/runs/44270494302) hoàn tất **success**, từ commit mã nguồn `dafa8b1a6e14f3b354de53fe37f305bab4e248c0`. GitHub Pages dùng workflow và HTTPS.
+
+Đã kiểm tra HTTP trên địa chỉ công khai: trang chính, 6 module JavaScript, 2 stylesheet, hình Taipei SVG, favicon và 3 tài liệu hướng dẫn đều trả **200** với kiểu nội dung phù hợp. HTML chứa đường dẫn theme/module đúng và app đã có câu chào cuối cùng. Đường dẫn `worker/index.mjs` trả **404**, xác nhận backend không nằm trong artifact tĩnh. Địa chỉ thư viện WebLLM 0.2.89 trả **200** khi kiểm tra HEAD; việc này chưa xác minh suy luận GPU thật.
 
 Bản build chỉ bao gồm tài nguyên tĩnh và hướng dẫn công khai. Không đưa PDF sách, thư mục tạm, thông tin đăng nhập, mã Worker hoặc cấu hình secret vào `dist/`.
