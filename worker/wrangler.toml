@@ -1,0 +1,24 @@
+name = "taiwan-talk-tutor"
+main = "index.mjs"
+compatibility_date = "2026-11-18"
+
+# Replace with the origin ONLY; do not include your GitHub repository path.
+[vars]
+ALLOWED_ORIGIN = "https://trankhoa06.github.io"
+AI_PROVIDER = "cloudflare"
+AI_MODEL = "@cf/qwen/qwen3.8-27b"
+
+# Workers AI uses the Cloudflare account binding; no OpenAI key is required.
+[ai]
+binding = "AI"
+
+# Use namespace IDs unique within your Cloudflare account.
+[[ratelimits]]
+name = "RATE_LIMITER"
+namespace_id = "1731801"
+simple = { limit = 12, period = 60 }
+
+[[ratelimits]]
+name = "GLOBAL_LIMITER"
+namespace_id = "1731802"
+simple = { limit = 120, period = 60 }

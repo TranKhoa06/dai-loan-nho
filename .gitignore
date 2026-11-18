@@ -1,0 +1,15 @@
+node_modules/
+dist/
+.env
+.env.*
+!.env.example
+.dev.vars
+.dev.vars.*
+.wrangler/
+coverage/
+tmp/
+*.pdf
+*.log
+.DS_Store
+Thumbs.db
+*.zip

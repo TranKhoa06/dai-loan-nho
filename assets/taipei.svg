@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="390" viewBox="0 0 500 390" fill="none">
+<defs><pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="3" cy="3" r="1.5" fill="#fff" fill-opacity=".15"/></pattern><filter id="shadow" x="-40%" y="-40%" width="180%" height="180%"><feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#0b2631" flood-opacity=".18"/></filter></defs>
+<circle cx="286" cy="202" r="146" fill="#6ED6BC"/><circle cx="388" cy="92" r="35" fill="#FF8966"/><path d="M83 58h288v286H83z" fill="url(#dots)"/>
+<path d="M138 318c24-47 50-80 82-58 50 34 48-55 97-52 48 3 70 74 117 73v66H138Z" fill="#46BDA1"/>
+<path d="M275 307V89h43v218" fill="#DDF7E9"/>
+<path d="m268 98 8 23h42l8-23Zm0 31 8 23h42l8-23Zm0 31 8 23h42l8-23Zm0 31 8 23h42l8-23Zm0 31 8 23h42l8-23Zm0 31 8 23h42l8-23Z" fill="#F8F9E9" stroke="#176C69" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M284 98V74h25v24m-18-24V58h11v16m-5-16V27" stroke="#DDF7E9" stroke-width="4" stroke-linecap="round"/>
+<path d="M148 312V205h56v107" fill="#F6D98B"/><path d="M139 205h74l-18-17h-37Z" fill="#F48D6B"/><path d="M159 189v-20h34v20m-28-20 11-15 11 15" stroke="#F6D98B" stroke-width="3"/>
+<g stroke="#926C4B" stroke-width="4" stroke-linecap="round"><path d="M160 221h6m16 0h6m-28 19h6m16 0h6m-28 19h6m16 0h6m-28 19h6m16 0h6"/></g>
+<path d="M347 318V221h54v97" fill="#F9F5D7"/><path d="M354 221v-21h40v21m-29-21v-16h18v16" stroke="#F9F5D7" stroke-width="5"/>
+<g stroke="#6DAA96" stroke-width="4" stroke-linecap="round"><path d="M359 238h6m16 0h6m-28 20h6m16 0h6m-28 20h6m16 0h6"/></g>
+<path d="M124 327c103-12 191 4 291-8" stroke="#D5F4DE" stroke-width="4" stroke-linecap="round"/>
+<g transform="rotate(-9 122 123)" filter="url(#shadow)"><rect x="40" y="67" width="151" height="124" rx="16" fill="#FFFDF5"/><rect x="53" y="80" width="44" height="8" rx="4" fill="#E4EAE2"/><text x="63" y="139" fill="#164F59" font-size="45" font-weight="700" font-family="sans-serif">你好</text><text x="64" y="168" fill="#688079" font-size="16" font-family="sans-serif">nǐ hǎo!</text><circle cx="167" cy="166" r="11" fill="#FF8966"/><path d="m163 166 3 3 5-6" stroke="white" stroke-width="2" stroke-linecap="round"/></g>
+<g transform="rotate(12 411 312)" filter="url(#shadow)"><rect x="352" y="276" width="128" height="73" rx="12" fill="#FFE39F"/><path d="M373 296h51m-51 12h32m-32 18h77" stroke="#9C7C3B" stroke-width="3" stroke-linecap="round"/><circle cx="449" cy="299" r="12" stroke="#BDA059" stroke-width="2"/><path d="m444 299 4 4 6-8" stroke="#9C7C3B" stroke-width="2"/></g>
+<g transform="rotate(-7 88 293)" filter="url(#shadow)"><path d="m56 256 9 86c1 9 45 9 47 0l9-86Z" fill="#F9DAB0" stroke="#FFFDF5" stroke-width="4"/><path d="M52 255h73" stroke="#FFFDF5" stroke-width="11" stroke-linecap="round"/><path d="m91 257 12-49" stroke="#FF8867" stroke-width="7" stroke-linecap="round"/><path d="M61 277h55" stroke="#FFF2D9" stroke-width="3"/><g fill="#73524D"><circle cx="75" cy="321" r="5"/><circle cx="96" cy="325" r="5"/><circle cx="86" cy="337" r="5"/><circle cx="102" cy="340" r="4"/><circle cx="72" cy="337" r="4"/></g></g>
+<path d="m424 147 7 4 7-4m-62-113 5 3 6-3" stroke="#DDF6E9" stroke-width="3" stroke-linecap="round"/>
+<path d="m214 45 3 8 9 1-7 5 2 9-7-5-7 5 2-9-7-5 9-1Z" fill="#FFE39F"/>
+<path d="m40 226 4 9 10 1-8 6 2 10-8-6-8 6 2-10-8-6 10-1Z" fill="#6ED6BC"/>
+</svg>
